@@ -1,3 +1,11 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h> /* File, fopen, getline, fclose, stderr */
+#include <stdlib.h> /* EXIT_SUCCESS, EXIT_FAILURE, free */
+
+#include <string.h> /* strtok, strcmp */
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -27,3 +35,5 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+#endif /*MAIN_H*/
